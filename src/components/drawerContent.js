@@ -31,7 +31,7 @@ export function DrawerContent(props) {
     }
 
     return(
-        <View style={{flex:1}}>
+        <View style={{flex:1, borderWidth: 1, borderColor: 'lime', paddingHorizontal: 30}}>
             <DrawerContentScrollView {...props}>
                 <View style={styles.drawerContent}>
                     <View style={styles.userInfoSection}>
@@ -178,6 +178,8 @@ const styles = StyleSheet.create({
     },
     drawerSection: {
       marginTop: 15,
+      borderBottomColor: 'red',
+      borderBottomWidth: 4
     },
     bottomDrawerSection: {
         marginBottom: 15,

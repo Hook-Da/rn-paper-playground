@@ -45,7 +45,7 @@ const CustomDarkTheme = {
   }
 }
 console.log('%c++[        ]','background: tomato', CustomDarkTheme);
-const theme = CustomDarkTheme;
+const theme = CustomDefaultTheme;
 
 
 const App = () => {
@@ -55,6 +55,9 @@ const App = () => {
         <Drawer.Navigator 
             drawerContent={props => <DrawerContent {...props} />}
             initialRouteName="Home"
+            drawerStyle={{
+              width: 350,
+            }}
         >
           <Drawer.Screen name="HomeDrawer" component={MainTabScreen} />
           <Drawer.Screen name="Bookmarks" component={BookmarksPage} />
